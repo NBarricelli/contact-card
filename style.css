@@ -39,6 +39,53 @@ body {
     padding: 30px 20px;
 }
 
+/* -- Cursor Background Glow -- */
+
+.cursor-glow {
+    position: fixed;
+
+    width: 500px;
+    height: 500px;
+
+    border-radius: 50%;
+
+    pointer-events: none;
+
+    background: radial-gradient(
+        circle,
+        rgba(59, 130, 246, 0.16) 0%,
+        rgba(37, 99, 235, 0.08) 30%,
+        rgba(30, 64, 175, 0.03) 50%,
+        transparent 70%
+    );
+
+    transform: translate(-50%, -50%);
+
+    filter: blur(25px);
+
+    z-index: 0;
+
+    opacity: 0;
+
+    transition: opacity 0.4s ease;
+}
+
+
+/* Keeping the contact card above the glow */
+
+.card {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* Disabling effect on touch/mobile devices */
+
+@media (hover: none), (pointer: coarse) {
+    .cursor-glow {
+        display: none;
+    }
+}
 
 /* -- Card -- */
 
