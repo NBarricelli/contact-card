@@ -3,6 +3,8 @@ VERSION:3.0
 N:Barricelli;Nick;;;
 FN:Nick Barricelli
 EMAIL;TYPE=INTERNET:nick@barricel.li
-URL:https://nick.barricel.li
+URL;TYPE=HOME:https://nick.barricel.li
+URL;TYPE=LinkedIn:https://www.linkedin.com/in/nickbarricelli/
+URL;TYPE=GitHub:https://github.com/NBarricelli
 NOTE:IT Professional - Infrastructure, Networking, and Endpoint Management
 END:VCARD
